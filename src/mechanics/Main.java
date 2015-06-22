@@ -3,7 +3,7 @@ import bots.*;
 public class Main {
 
 	public static void main(String[] args){
-		Bot[] bots = {new ChaosBot(), new WaveBot(), new WallBot(), new SimpleBot()};
+		Bot[] bots = {new WaveBot(), new SimpleBot()};
 		int[] scores = new int[bots.length];
 		
 		for(int i = 0; i < bots.length - 1; i++){
