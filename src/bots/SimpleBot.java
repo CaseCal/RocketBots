@@ -14,6 +14,7 @@ public class SimpleBot extends Bot {
 	}
 	
 	public LinkedList<Integer> fireRocket(Rocket[][] g){
+		
 		LinkedList<Integer> l = new LinkedList<Integer>();
 		for(int i = 0; i < 12; i++){
 			l.push(0);

@@ -30,7 +30,7 @@ public class Duel {
 				if(p1.viableShot()){
 					rockets.add(rock);
 				}
-				rock = new Rocket(p2.fireRocket(g.flip().g), "v", g.g[0].length/2 - 1 + p2.curSlot, 9);
+				rock = new Rocket(p2.fireRocket(g.flip().g), "v", g.g[0].length/2 - 1 +(2 - p2.curSlot), 9);
 				rock.flip();
 				if(p2.viableShot()){
 					rockets.add(rock);
