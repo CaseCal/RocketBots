@@ -129,11 +129,12 @@ public class Grid {
 	}
 	
 	public Grid flip(){
-		Rocket[][] flip = new Rocket[g.length][g[0].length];
+		int rowLength = g[0].length;
+		Rocket[][] flip = new Rocket[g.length][rowLength];
 		for(int i = 0; i < g.length - 1; i++){
 			for(int j = 0; j < g[g.length - 1 - i].length; j++){
-				if(g[g.length - 1 - i][j] != null){
-					flip[i][j] = g[g.length - 1 - i][j].dummyFlip();
+				if(g[g.length - 1 - i][rowLength - 1 - j] != null){
+					flip[i][j] = g[g.length - 1 - i][rowLength - 1 - j].dummyFlip();
 				}
 			}
 		}
